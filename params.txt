@@ -1,2 +1,2 @@
 -i /home/burak/Desktop/2806116
--q /home/burak/Desktop/2806116/Twitter-725207420381847552 1 5
+-q /home/burak/Desktop/2806116/Twitter-725207420381847552 1 5 --deprecated. See README for last version--
