@@ -136,6 +136,12 @@ bool Indexing::detectAndExtractFeatures( Mat& img, Mat& descriptors, const strin
 bool Indexing::saveIndexSettings( const Mat& concatMat, const Index& fln_index, int& partNo) const
 {
 	string dir_path = "./Indices/";
+	if( !createDirectory( dir_path))
+	{
+		cerr << "Couldn't create \"" << dir_path << "\"." << endl;
+		return false;
+	}
+	
 	dir_path.append( date_of_DB_images);
 	if( !createDirectory( dir_path))
 	{
