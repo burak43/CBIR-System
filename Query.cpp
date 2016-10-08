@@ -30,6 +30,12 @@ bool Query::processIndices( string path_to_date, vector<vector<string> >& simila
 {
 	currentDate = path_to_date.substr( path_to_date.find( '/', 2) + 1);
 	currentDate = currentDate.substr( 0, 4).append( currentDate.substr( 5));
+	if( !exists( path_to_date))
+	{
+		cerr << "No such directory exists: \"" << path_to_date << "\"" << endl;
+		return false;
+	}
+	
 	// process every index parts
 	for( directory_iterator it( path_to_date); it != directory_iterator(); ++it)
 	{
