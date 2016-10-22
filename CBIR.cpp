@@ -3,7 +3,7 @@
  *
  *  Created on: Jun 14, 2016
  *      Author: Burak Mandira
- *  	   Use: ./CBIRSystem "path to original directory" "path to query directory"
+ *  	   Use: ./CBIRSystem "path to original directory" "path to query directory" [DEPRECATED] --see README.md--
  */
 
 #include <ctime>
